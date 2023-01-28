@@ -22,7 +22,6 @@ const Explore = () => {
         item.name.toLowerCase().includes(e.target.value.toLowerCase())
       )
     );
-   
   };
 
   return (

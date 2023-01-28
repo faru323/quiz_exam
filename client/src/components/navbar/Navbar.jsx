@@ -32,15 +32,20 @@ const Navbar = () => {
         <div className={s.nav__bottom__middle}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link className="Link" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/add">Add</Link>
+              <Link className="Link" to="/add">
+                Add
+              </Link>
             </li>
-          
           </ul>
         </div>
-        <div className={s.nav__bottom__right}></div>
+        <div className={s.nav__bottom__right}>
+          <button>Get a Quote</button>
+        </div>
       </div>
     </div>
   );
