@@ -1,8 +1,10 @@
-import React from 'react'
-import s from './navbar.module.scss'
+import React from "react";
+import s from "./navbar.module.scss";
 import { FaGooglePlusG, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import {MdLocalPostOffice } from "react-icons//md";
+import { MdLocalPostOffice } from "react-icons//md";
 import { BsFillTelephoneFill } from "react-icons//bs";
+import logo from "../../images/logo.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className={s.nav}>
@@ -25,13 +27,23 @@ const Navbar = () => {
       </div>
       <div className={s.nav__bottom}>
         <div className={s.nav__bottom__left}>
-
-          <img src="../.././images./logo.png" alt="alt" />
+          <img src={logo} alt="alt" />
+        </div>
+        <div className={s.nav__bottom__middle}>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/add">Add</Link>
+            </li>
+          
+          </ul>
         </div>
         <div className={s.nav__bottom__right}></div>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
