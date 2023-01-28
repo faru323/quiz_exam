@@ -24,7 +24,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className={s.nav__bottom}>
-        <div className={s.nav__bottom__left}></div>
+        <div className={s.nav__bottom__left}>
+
+          <img src="../.././images./logo.png" alt="alt" />
+        </div>
         <div className={s.nav__bottom__right}></div>
       </div>
     </div>

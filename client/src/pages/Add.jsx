@@ -23,7 +23,8 @@ const user = userSchema.validate( );
 
   const formik = useFormik({
     initialValues: {
-      email: "",
+      name: "",
+      desc: ''
     },
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
@@ -35,12 +36,20 @@ const user = userSchema.validate( );
     <form onSubmit={formik.handleSubmit}>
       <label htmlFor="email">Email Address</label>
       <input
-        id="email"
-        name="email"
-        type="email"
+        id="name"
+        name="name"
+        type="text"
         onChange={formik.handleChange}
         value={formik.values.email}
       />
+      <input
+        id="desc"
+        name="desc"
+        type="text"
+        onChange={formik.handleChange}
+        value={formik.values.email}
+      />
+    
 
       <button type="submit">Submit</button>
     </form>
