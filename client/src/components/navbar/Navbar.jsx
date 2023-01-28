@@ -32,12 +32,12 @@ const Navbar = () => {
         <div className={s.nav__bottom__middle}>
           <ul>
             <li>
-              <Link className="Link" to="/">
+              <Link className={s.Link} to="/">
                 Home
               </Link>
             </li>
             <li>
-              <Link className="Link" to="/add">
+              <Link className={s.Link}  to="/add">
                 Add
               </Link>
             </li>

@@ -33,7 +33,7 @@ const user = userSchema.validate( );
 
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form style={{"marginTop": '200px'}} onSubmit={formik.handleSubmit}>
       <label htmlFor="email">Email Address</label>
       <input
         id="name"

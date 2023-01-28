@@ -50,8 +50,11 @@
     justify-content: space-around;
     align-items: center;
     &__left {
-      width: 200px;
-      height: 100px;
+   img{
+       width: 100px;
+       margin-left: 180px;
+      height: 50px;
+   }
     }
     &__middle {
         height: 100px;
@@ -59,8 +62,10 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+      flex-direction: row;
       ul {
         width: 400px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -79,6 +84,7 @@
         width: 150px;
         height: 100px;
         button{
+            margin-top: 10px;
             width: 120px;
             height: 40px;
             border-radius: 5px;
